@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The DOM</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <div id="main-container">
+            <h2 class="text-center">My ToDo List</h2>
+            <ul>
+                <li class="todo-item" onclick="removeToDo()"> Brush Teeth</li>
+                <li class="todo-item" onclick="removeToDo()"> Eat Breakfast</li>
+                <li class="todo-item" onclick="removeToDo()"> Get dressed</li>
+            </ul>
+
+            <form onsubmit="addTodo()"> 
+                <input type="text" name="newTodo" required /> <br /> 
+                <input type="submit" value="submit" /> 
+            </form>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
